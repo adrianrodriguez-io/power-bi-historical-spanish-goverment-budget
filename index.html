@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Power Bi - EDA Spanish PGE Analysis</title>
+</head>
+<body>
+<h1>Power Bi - EDA Spanish PGE Analysis</h1>
+<h3>Data visualization:</h3>
+<p>
+Data visualization developed with Power Bi about historical data of the Spanish PGE estimations for different years.
+Originally the data is based in the PDFs documents, wich are a little bit confusing, but wich have been
+converted into csv format thanks to the team of <a href='https://www.dondevanmisimpuestos.es'>https://www.dondevanmisimpuestos.es</a> who worked 
+on a ruby application that ingest PDFs and 
+generate the data in csv format. 
+
+You can find the original ruby project and the csv files in the following Github repository 
+<a href='https://github.com/civio/scraper-pge/'>https://github.com/civio/scraper-pge/</a>
+</p>
+<h3>Exploratory data analysis (EDA) and insights:</h3>
+<p>
+In the EDA analysis we can find that there are not very many huge increments or decreases over the years. 
+In the data visualization we can find that main items of expenses are transfers, families expenses items 
+and retirements transfers in the top 3 list.
+Taking a look at incomes we can find that the estimation is supported by the following 3 items, direct taxes, 
+social labour taxation and general taxation (cotizaciones generales). 
+Disclaimer: I have to say that I am not familiarized with the terms used in the Spanish governement budget
+but i thought it would interesting to do an EDA about the data.
+</p>
+<h3>Data modeling:</h3>
+<p>The data modeling for this project consists on 4 tables: </p>
+<ul>
+<li>Tipo: wich contains the two members, Gastos and Incomes, for filtering.</li>
+<li>Ejercicio: wich contains a relation of the years analyzed.</li>
+<li>Gastos: A set of different tables with same structure containing data 
+about estimated expenses for different years.
+In the data model of the Power Bi these different tables have been merged into one dataset.</li>
+<li>Ingresos: A set of tables for the different years analyzed with about estimated incomes. 
+In the data model of the Power BI these different tables have been merged into one dataset.</li>
+</ul>
+<p>The relations between the different tables can be seen in the following image.</p>
+<img src='https://github.com/adrianrodriguez-io/power-bi-pgde/blob/main/images/Power%20BI%20Data%20model.png?raw=true'></img>
+<h3>Data visualization:</h3>
+<p>As following you can find the data visualization wich is a Power BI wich allow you to interact
+and explore the data.</p>
+<iframe title="EDA Analisis PGE" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMTRkMjVlYTAtZDVjMS00MjA2LWFkNDItN2QxZTRmMzM2ZTFjIiwidCI6ImEwODIzZDk4LWM0MTgtNDgwYi1hNjI3LTQ1N2I3NmVlYjVkNyJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe></body>
+</html>
