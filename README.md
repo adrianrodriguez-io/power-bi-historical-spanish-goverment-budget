@@ -9,3 +9,8 @@ generate the data in csv format.
 You can find the original ruby project and the csv files in the following Github repository 
 <a href='https://github.com/civio/scraper-pge/'>https://github.com/civio/scraper-pge/</a>
 
+You can check the live Power BI data visualization and my findings in the following link <a href=''></a> .
+
+<img src='https://github.com/adrianrodriguez-io/power-bi-pgde/blob/main/images/Power%20BI%20data%20visualization.png'></img>
+
+
