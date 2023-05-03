@@ -1,4 +1,4 @@
-# power-bi-pgde
+# Power BI Spanish goverment historical budget
 Data visualization developed with Power Bi about historical data of the Spanish PGE estimations for different years.
 
 Originally the data is based in the PDFs documents, wich are a little bit confusing, but wich have been
